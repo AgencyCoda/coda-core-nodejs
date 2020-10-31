@@ -1,4 +1,4 @@
-class Response {
+class CodaResponse {
     static success(result) {
         return { success: true, response: result };
     }
@@ -8,4 +8,4 @@ class Response {
     }
 }
 
-module.exports = { Response };
+module.exports = { CodaResponse };

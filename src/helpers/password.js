@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 
-class Password {
+class CodaPassword {
   /** @private */
   static get HASH_ITERATIONS () { return 100; }
 
@@ -78,5 +78,5 @@ class Password {
 }
 
 module.exports = {
-  Password,
+  CodaPassword,
 };

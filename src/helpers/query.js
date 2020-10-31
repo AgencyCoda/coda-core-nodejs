@@ -1,6 +1,6 @@
 const { Op } = require('sequelize');
 
-class QueryModel {
+class CodaQueryModel {
     page = 1;
     limit = 50;
     wheres = [];
@@ -46,4 +46,4 @@ class QueryModel {
     }
 }
 
-module.exports = { QueryModel };
+module.exports = { CodaQueryModel };

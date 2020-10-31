@@ -1,4 +1,4 @@
-class Errors {
+class CodaErrors {
     static get PARAM_REQUIRED() { return this.create(801, 'The param is required.') };
   
     static create(code, message) {
@@ -15,4 +15,4 @@ class Errors {
     }*/
   }
   
-  module.exports = { Errors };
+  module.exports = { CodaErrors };

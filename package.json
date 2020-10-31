@@ -1,10 +1,15 @@
 {
-  "name": "coda-core-nodejs",
-  "version": "1.0.0",
+  "name": "@agencycoda/core-nodejs",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "source": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "microbundle",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "coda"
@@ -12,6 +17,10 @@
   "author": "Matias Camiletti",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "microbundle": "^0.12.4"
   }
 }
